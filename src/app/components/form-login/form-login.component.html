@@ -1,0 +1,26 @@
+
+
+<p-panel header="Iniciar sesión">
+    <form [formGroup]="form" novalidate>
+        <div class="field-margin-top field-margin-bottom">
+            <span class="ui-float-label">
+                <input id="float-input" type="email" size="45" pInputText formControlName="email"> 
+                <label for="float-input">Correo</label>
+            </span>
+            <p-message *ngIf="formValidate.isFieldValid(form, 'email')" severity="error" text="Correo es Obligatorio y debe ser de formato john@doe.com"></p-message>
+        </div>
+    
+        <div class="field-margin-bottom">
+            <span class="ui-float-label">
+                <input id="float-input" type="password" pPassword  size="45" formControlName="passwd"> 
+                <label for="float-input">Password</label>
+            </span>
+            <p-message *ngIf="formValidate.isFieldValid(form, 'passwd')" severity="error" text="Password es Obligatorio"></p-message>
+        </div>
+    </form>
+    
+    <p-footer>
+        <button pButton type="button" icon="pi pi-save" label="Iniciar" class="ui-button-info" style="margin-right: .25em" (click)="iniciar()"></button>
+        <button pButton type="button" icon="pi pi-undo" label="Cancelar" class="ui-button-success" (click)="regresar()"></button>
+    </p-footer>
+</p-panel>

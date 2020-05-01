@@ -1,0 +1,7 @@
+<div class="topnav" id="myTopnav">    
+    <a href="/" [routerLink]="['/']">Inicio</a>
+    <a *ngIf="!auth.esAutenticado()" href="/register" [routerLink]="['/register']">Registro</a>
+    <a *ngIf="!auth.esAutenticado()" href="/login" [routerLink]="['/login']">Iniciar sesión</a>
+    <a *ngIf="auth.esAutenticado()" href="/admin" [routerLink]="['/admin']">Admin</a>
+    <a *ngIf="auth.esAutenticado()" href="#" (click)="auth.logout()">Salir</a>
+</div>

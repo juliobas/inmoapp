@@ -1,0 +1,14 @@
+<div class="topnav" id="myTopnav">
+    <div class="dropdown">
+        <button class="dropbtn">&#9776;</button>
+        <div class="dropdown-content">
+          <a href="/admin/empresa" [routerLink]="['/admin/empresa']">Empresa</a>
+          <a href="/admin/oficinas" [routerLink]="['/admin/oficinas']">Oficinas</a>
+          <a href="/admin/asesores" [routerLink]="['/admin/asesores']">Asesores</a>
+          <a href="/admin/inmuebles" [routerLink]="['/admin/inmuebles']">Inmuebles</a>
+        </div>
+      </div>
+
+    <a href="/" [routerLink]="['/']">Inicio</a>
+    <a *ngIf="auth.esAutenticado()" href="#" (click)="logout()">Salir</a>
+</div>

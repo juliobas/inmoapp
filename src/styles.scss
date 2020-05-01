@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #E6E6E6;
+    margin:0px;
+}
+.main-content {
+    margin-top: 80px;
+    min-height: calc(100vh - 150px);
+}
+
+.field-margin-top{
+    margin-top: 35px;
+}
+.field-margin-bottom {
+    margin-bottom: 35px;
+}
+
+.fab {
+    width: 70px;
+    height: 70px;
+    background-color: #1976D2;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+  
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+ }
+  
+ .fab:hover {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+ }
