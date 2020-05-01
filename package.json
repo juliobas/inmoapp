@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "buildgithub": "ng build --prod --base-href 'https://juliobas.github.io/inmoapp/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
