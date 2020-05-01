@@ -28,5 +28,9 @@ export class ModalEmpresaFormComponent implements OnInit {
     console.log("cerrando modal");
     this.closeModal.emit(false);
   }
+  
+  onRegister() {
+    console.log("registrando");
+  }
 
 }

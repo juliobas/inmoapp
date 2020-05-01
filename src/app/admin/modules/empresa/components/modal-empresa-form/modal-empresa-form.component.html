@@ -21,7 +21,7 @@
     
         <div class="field-margin-bottom">
             <span class="ui-float-label">
-                <p-inputMask id="float-input" mask="(999) 999-9999" [(ngModel)]="val4" placeholder="(999) 999-9999" formControlName="phone"></p-inputMask> 
+                <p-inputMask id="float-input" mask="(999) 999-9999" placeholder="(999) 999-9999" formControlName="phone"></p-inputMask> 
                 <label for="float-input">Telefono</label>
             </span>
             <p-message *ngIf="formValidate.isFieldValid(form, 'phone')" severity="error" text="Telefono es Obligatorio"></p-message>
